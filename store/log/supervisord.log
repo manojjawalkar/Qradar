@@ -1,0 +1,36 @@
+2022-02-05 05:52:44,437 WARN No file matches via include "/etc/supervisord.d/*.conf"
+2022-02-05 05:52:44,446 INFO RPC interface 'supervisor' initialized
+2022-02-05 05:52:44,447 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-02-05 05:52:44,448 INFO supervisord started with pid 39
+2022-02-05 05:52:45,456 INFO spawned: 'startflask' with pid 42
+2022-02-05 05:52:47,128 INFO success: startflask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-02-05 06:00:55,059 WARN No file matches via include "/etc/supervisord.d/*.conf"
+2022-02-05 06:00:55,065 INFO RPC interface 'supervisor' initialized
+2022-02-05 06:00:55,066 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-02-05 06:00:55,067 INFO supervisord started with pid 37
+2022-02-05 06:00:56,075 INFO spawned: 'startflask' with pid 40
+2022-02-05 06:00:57,460 INFO success: startflask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-02-05 06:04:21,101 WARN No file matches via include "/etc/supervisord.d/*.conf"
+2022-02-05 06:04:21,106 INFO RPC interface 'supervisor' initialized
+2022-02-05 06:04:21,107 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-02-05 06:04:21,108 INFO supervisord started with pid 37
+2022-02-05 06:04:22,113 INFO spawned: 'startflask' with pid 40
+2022-02-05 06:04:23,657 INFO success: startflask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-02-05 06:06:30,872 WARN No file matches via include "/etc/supervisord.d/*.conf"
+2022-02-05 06:06:30,876 INFO RPC interface 'supervisor' initialized
+2022-02-05 06:06:30,878 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-02-05 06:06:30,879 INFO supervisord started with pid 36
+2022-02-05 06:06:31,886 INFO spawned: 'startflask' with pid 39
+2022-02-05 06:06:33,406 INFO success: startflask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-02-05 06:15:12,878 WARN No file matches via include "/etc/supervisord.d/*.conf"
+2022-02-05 06:15:12,883 INFO RPC interface 'supervisor' initialized
+2022-02-05 06:15:12,884 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-02-05 06:15:12,885 INFO supervisord started with pid 36
+2022-02-05 06:15:13,896 INFO spawned: 'startflask' with pid 39
+2022-02-05 06:15:15,564 INFO success: startflask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-02-05 06:17:25,166 WARN No file matches via include "/etc/supervisord.d/*.conf"
+2022-02-05 06:17:25,170 INFO RPC interface 'supervisor' initialized
+2022-02-05 06:17:25,171 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-02-05 06:17:25,172 INFO supervisord started with pid 36
+2022-02-05 06:17:26,181 INFO spawned: 'startflask' with pid 39
+2022-02-05 06:17:27,778 INFO success: startflask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

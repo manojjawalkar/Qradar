@@ -1,0 +1,350 @@
+2022-02-05 05:52:43 A0000_start_container.sh running with pid 17
+2022-02-05 05:52:43 A0000 Configurating default host strategy.
+2022-02-05 05:52:43 A0000 Checking if certificates need to be copied from /etc/qradar_pki to /etc/pki
+2022-02-05 05:52:43 A0000 /etc/qradar_pki does not exist, skipping
+2022-02-05 05:52:43 A0000 Attempting to update hosts file with FQDN if present in environment variables
+2022-02-05 05:52:43 A0000 FQDN and console ip environment variables not found, skipping adding entry to hosts file
+2022-02-05 05:52:43 A0000 Did not find console PEM cert in environment
+2022-02-05 05:52:43 A0000_start_container.sh exited with status 0
+2022-02-05 05:52:43 A9800_configure.sh running with pid 27
+2022-02-05 05:52:43 A9800 Altering sudo access for appuser to allow only update_ca_bundle.sh
+2022-02-05 05:52:44 A9800_configure.sh exited with status 0
+2022-02-05 05:52:44 A9900_supervisord.sh running with pid 36
+2022-02-05 05:52:44 A9900 Starting supervisord
+ * Serving Flask app "app"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2022-02-05 06:00:49 No /opt/app-root/container/clean/cleanup.sh script found, skipping cleanup
+2022-02-05 06:00:54 A0000_start_container.sh running with pid 15
+2022-02-05 06:00:54 A0000 Configurating default host strategy.
+2022-02-05 06:00:54 A0000 Checking if certificates need to be copied from /etc/qradar_pki to /etc/pki
+2022-02-05 06:00:54 A0000 /etc/qradar_pki does not exist, skipping
+2022-02-05 06:00:54 A0000 Attempting to update hosts file with FQDN if present in environment variables
+2022-02-05 06:00:54 A0000 FQDN and console ip environment variables not found, skipping adding entry to hosts file
+2022-02-05 06:00:54 A0000 Did not find console PEM cert in environment
+2022-02-05 06:00:54 A0000_start_container.sh exited with status 0
+2022-02-05 06:00:54 A9800_configure.sh running with pid 25
+2022-02-05 06:00:54 A9800 Altering sudo access for appuser to allow only update_ca_bundle.sh
+2022-02-05 06:00:54 A9800_configure.sh exited with status 0
+2022-02-05 06:00:54 A9900_supervisord.sh running with pid 34
+2022-02-05 06:00:54 A9900 Starting supervisord
+ * Serving Flask app "app"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+172.17.0.1 - - [05/Feb/2022 06:03:11] "[33mGET / HTTP/1.1[0m" 404 -
+172.17.0.1 - - [05/Feb/2022 06:03:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.17.0.1 - - [05/Feb/2022 06:03:14] "[33mGET / HTTP/1.1[0m" 404 -
+2022-02-05 06:04:15 No /opt/app-root/container/clean/cleanup.sh script found, skipping cleanup
+2022-02-05 06:04:20 A0000_start_container.sh running with pid 15
+2022-02-05 06:04:20 A0000 Configurating default host strategy.
+2022-02-05 06:04:20 A0000 Checking if certificates need to be copied from /etc/qradar_pki to /etc/pki
+2022-02-05 06:04:20 A0000 /etc/qradar_pki does not exist, skipping
+2022-02-05 06:04:20 A0000 Attempting to update hosts file with FQDN if present in environment variables
+2022-02-05 06:04:20 A0000 FQDN and console ip environment variables not found, skipping adding entry to hosts file
+2022-02-05 06:04:20 A0000 Did not find console PEM cert in environment
+2022-02-05 06:04:20 A0000_start_container.sh exited with status 0
+2022-02-05 06:04:20 A9800_configure.sh running with pid 25
+2022-02-05 06:04:20 A9800 Altering sudo access for appuser to allow only update_ca_bundle.sh
+2022-02-05 06:04:20 A9800_configure.sh exited with status 0
+2022-02-05 06:04:20 A9900_supervisord.sh running with pid 34
+2022-02-05 06:04:20 A9900 Starting supervisord
+ * Serving Flask app "app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 162-330-512
+172.17.0.1 - - [05/Feb/2022 06:04:33] "[33mGET / HTTP/1.1[0m" 404 -
+172.17.0.1 - - [05/Feb/2022 06:04:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.17.0.1 - - [05/Feb/2022 06:04:36] "[33mGET / HTTP/1.1[0m" 404 -
+172.17.0.1 - - [05/Feb/2022 06:04:39] "[33mGET / HTTP/1.1[0m" 404 -
+172.17.0.1 - - [05/Feb/2022 06:06:02] "[33mGET / HTTP/1.1[0m" 404 -
+2022-02-05 06:06:24 No /opt/app-root/container/clean/cleanup.sh script found, skipping cleanup
+2022-02-05 06:06:30 A0000_start_container.sh running with pid 14
+2022-02-05 06:06:30 A0000 Configurating default host strategy.
+2022-02-05 06:06:30 A0000 Checking if certificates need to be copied from /etc/qradar_pki to /etc/pki
+2022-02-05 06:06:30 A0000 /etc/qradar_pki does not exist, skipping
+2022-02-05 06:06:30 A0000 Attempting to update hosts file with FQDN if present in environment variables
+2022-02-05 06:06:30 A0000 FQDN and console ip environment variables not found, skipping adding entry to hosts file
+2022-02-05 06:06:30 A0000 Did not find console PEM cert in environment
+2022-02-05 06:06:30 A0000_start_container.sh exited with status 0
+2022-02-05 06:06:30 A9800_configure.sh running with pid 24
+2022-02-05 06:06:30 A9800 Altering sudo access for appuser to allow only update_ca_bundle.sh
+2022-02-05 06:06:30 A9800_configure.sh exited with status 0
+2022-02-05 06:06:30 A9900_supervisord.sh running with pid 33
+2022-02-05 06:06:30 A9900 Starting supervisord
+ * Serving Flask app "app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 162-330-512
+ * Detected change in '/opt/app-root/app/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 162-330-512
+172.17.0.1 - - [05/Feb/2022 06:11:21] "[33mGET / HTTP/1.1[0m" 404 -
+172.17.0.1 - - [05/Feb/2022 06:11:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.17.0.1 - - [05/Feb/2022 06:11:45] "[35m[1mGET /network_search HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/opt/app-root/app/views.py", line 51, in admin_screen
+    networks = qpylib.REST('get', '/api/config/network_hierarchy/networks')
+  File "/usr/local/lib/python3.6/site-packages/qpylib/qpylib.py", line 119, in REST
+    params, json_body, rest_verify, timeout, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/qpylib/rest_qpylib.py", line 20, in rest
+    full_url = _generate_full_url(request_url)
+  File "/usr/local/lib/python3.6/site-packages/qpylib/rest_qpylib.py", line 56, in _generate_full_url
+    return "https://{0}/{1}".format(app_qpylib.get_console_fqdn(), request_url)
+  File "/usr/local/lib/python3.6/site-packages/qpylib/app_qpylib.py", line 56, in get_console_fqdn
+    return get_env_var('QRADAR_CONSOLE_FQDN')
+  File "/usr/local/lib/python3.6/site-packages/qpylib/app_qpylib.py", line 61, in get_env_var
+    raise KeyError('Environment variable {0} is not set'.format(key))
+KeyError: 'Environment variable QRADAR_CONSOLE_FQDN is not set'
+172.17.0.1 - - [05/Feb/2022 06:11:46] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:11:46] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:11:46] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:11:46] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:11:46] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:11:46] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2022-02-05 06:15:06 No /opt/app-root/container/clean/cleanup.sh script found, skipping cleanup
+2022-02-05 06:15:12 A0000_start_container.sh running with pid 14
+2022-02-05 06:15:12 A0000 Configurating default host strategy.
+2022-02-05 06:15:12 A0000 Checking if certificates need to be copied from /etc/qradar_pki to /etc/pki
+2022-02-05 06:15:12 A0000 /etc/qradar_pki does not exist, skipping
+2022-02-05 06:15:12 A0000 Attempting to update hosts file with FQDN if present in environment variables
+2022-02-05 06:15:12 A0000 FQDN and console ip environment variables not found, skipping adding entry to hosts file
+2022-02-05 06:15:12 A0000 Did not find console PEM cert in environment
+2022-02-05 06:15:12 A0000_start_container.sh exited with status 0
+2022-02-05 06:15:12 A9800_configure.sh running with pid 24
+2022-02-05 06:15:12 A9800 Altering sudo access for appuser to allow only update_ca_bundle.sh
+2022-02-05 06:15:12 A9800_configure.sh exited with status 0
+2022-02-05 06:15:12 A9900_supervisord.sh running with pid 33
+2022-02-05 06:15:12 A9900 Starting supervisord
+ * Serving Flask app "app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 162-330-512
+172.17.0.1 - - [05/Feb/2022 06:15:46] "[35m[1mGET /network_search HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/lib/python3.6/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib64/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connection.py", line 300, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f7bb66b10b8>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.6/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='%22vm592087.ibm.com%22', port=443): Max retries exceeded with url: //api/config/network_hierarchy/networks (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f7bb66b10b8>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/opt/app-root/app/views.py", line 51, in admin_screen
+    networks = qpylib.REST('get', '/api/config/network_hierarchy/networks')
+  File "/usr/local/lib/python3.6/site-packages/qpylib/qpylib.py", line 119, in REST
+    params, json_body, rest_verify, timeout, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/qpylib/rest_qpylib.py", line 24, in rest
+    json=json_body, verify=verify, timeout=timeout, proxies=proxies, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='%22vm592087.ibm.com%22', port=443): Max retries exceeded with url: //api/config/network_hierarchy/networks (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f7bb66b10b8>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+172.17.0.1 - - [05/Feb/2022 06:15:46] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:15:46] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:15:46] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:15:46] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:15:46] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:15:47] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2022-02-05 06:17:19 No /opt/app-root/container/clean/cleanup.sh script found, skipping cleanup
+2022-02-05 06:17:24 A0000_start_container.sh running with pid 14
+2022-02-05 06:17:24 A0000 Configurating default host strategy.
+2022-02-05 06:17:24 A0000 Checking if certificates need to be copied from /etc/qradar_pki to /etc/pki
+2022-02-05 06:17:24 A0000 /etc/qradar_pki does not exist, skipping
+2022-02-05 06:17:24 A0000 Attempting to update hosts file with FQDN if present in environment variables
+2022-02-05 06:17:24 A0000 FQDN and console ip environment variables not found, skipping adding entry to hosts file
+2022-02-05 06:17:24 A0000 Did not find console PEM cert in environment
+2022-02-05 06:17:24 A0000_start_container.sh exited with status 0
+2022-02-05 06:17:24 A9800_configure.sh running with pid 24
+2022-02-05 06:17:24 A9800 Altering sudo access for appuser to allow only update_ca_bundle.sh
+2022-02-05 06:17:24 A9800_configure.sh exited with status 0
+2022-02-05 06:17:24 A9900_supervisord.sh running with pid 33
+2022-02-05 06:17:24 A9900 Starting supervisord
+ * Serving Flask app "app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 162-330-512
+172.17.0.1 - - [05/Feb/2022 06:17:44] "[35m[1mGET /network_search HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/lib/python3.6/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib64/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connection.py", line 300, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7fee7c04e0b8>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.6/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='%22vm592087.ibm.com%22', port=443): Max retries exceeded with url: //api/config/network_hierarchy/networks (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fee7c04e0b8>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/opt/app-root/app/views.py", line 51, in admin_screen
+    networks = qpylib.REST('get', '/api/config/network_hierarchy/networks')
+  File "/usr/local/lib/python3.6/site-packages/qpylib/qpylib.py", line 119, in REST
+    params, json_body, rest_verify, timeout, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/qpylib/rest_qpylib.py", line 24, in rest
+    json=json_body, verify=verify, timeout=timeout, proxies=proxies, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='%22vm592087.ibm.com%22', port=443): Max retries exceeded with url: //api/config/network_hierarchy/networks (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fee7c04e0b8>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+172.17.0.1 - - [05/Feb/2022 06:17:44] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:17:44] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:17:44] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:17:44] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:17:44] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/Feb/2022 06:17:45] "[37mGET /network_search?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+ * Detected change in '/opt/app-root/app/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 162-330-512
+ * Detected change in '/opt/app-root/app/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 162-330-512
