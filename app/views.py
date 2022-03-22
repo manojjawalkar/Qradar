@@ -43,22 +43,20 @@ def get_ariel_databases():
 
 @viewsbp.route('/network_search')
 def admin_screen():
-    return render_template("network_search.html", title="Admin Me!")
-    # form here
-    # redirect to logic
-    # try:
-    #     # This API returns a list of networks i.e, [ ... ]
-    #     # and inside it is a dictionary of network details [ {name: value,},{..}.. ]
-    #     networks = qpylib.REST('get', '/api/config/network_hierarchy/networks')
-    #     options = {}
-    #     for network in networks.json():
-    #         options[network] = network
-    #         qpylib.log("network set: " + network)
-    #         qpylib.log("network options: " + options)
-    #
-    #     return render_template("network_search.html", title="test!", options=json.dumps(options))
-    # except Exception as ex:
-    #     qpylib.log(
-    #         'Error calling REST api GET /api/config/network_hierarchy/networks: ' + str(ex),
-    #         'ERROR')
-    #     raise
+    try:
+        networks = qpylib.REST('get', '/api/config/network_hierarchy/networks')
+        options = {}
+        for network in networks.json():
+            qpylib.log("Networks ="+ str(network))
+            net_name = network['name']
+            net_cidr = network['cidr']
+            net_group = network['group']
+
+        qpylib.log("Name="+ net_name)
+        qpylib.log("cidr="+ net_cidr)
+        qpylib.log("group="+ net_group)
+
+        return render_template("network_search.html", title="Admin Me!")
+    except Exception as ex:
+        qpylib.log("This is an exception"+str(ex),'ERROR')
+        raise
