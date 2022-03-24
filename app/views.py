@@ -13,6 +13,7 @@
 # limitations under the License.
 
 from flask import Blueprint, render_template
+from ipaddress import IPv4Network
 import json
 from qpylib import qpylib
 
@@ -55,6 +56,15 @@ def admin_screen():
         qpylib.log("Name="+ net_name)
         qpylib.log("cidr="+ net_cidr)
         qpylib.log("group="+ net_group)
+        qpylib.log(type(net_name))
+        qpylib.log(type(net_cidr))
+        qpylib.log(type(net_group))
+
+        y = IPv4Network(net_cidr)
+        qpylib.log("--- printing IPv4 addr ---")
+        qpylib.log(y)
+
+
 
         return render_template("network_search.html", title="Admin Me!")
     except Exception as ex:
