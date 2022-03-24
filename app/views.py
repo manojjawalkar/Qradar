@@ -63,6 +63,8 @@ def admin_screen():
         y = IPv4Network(net_cidr)
         qpylib.log("--- printing IPv4 addr ---")
         qpylib.log(y)
+        z = IPv4Network('0.0.0.14')
+        qpylib.log(y.overlaps(z))
 
 
 
