@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request, url_for
 from ipaddress import IPv4Network
 import json
 from qpylib import qpylib
@@ -42,33 +42,38 @@ def get_ariel_databases():
             'ERROR')
         raise
 
-@viewsbp.route('/network_search')
-def admin_screen():
-    try:
-        networks = qpylib.REST('get', '/api/config/network_hierarchy/networks')
-        options = {}
-        for network in networks.json():
-            qpylib.log("Networks ="+ str(network))
-            net_name = network['name']
-            net_cidr = network['cidr']
-            net_group = network['group']
+@viewsbp.route('/network_search', methods=['GET','POST'])
+def network_search():
+    if request.method == 'GET':
+        try:
+            networks = qpylib.REST('get', '/api/config/network_hierarchy/networks')
+            for network in networks.json():
+                qpylib.log("Networks ="+ str(network))
+                net_name = network['name']
+                net_cidr = network['cidr']
+                net_group = network['group']
 
-        qpylib.log("Name="+ net_name)
-        qpylib.log("cidr="+ net_cidr)
-        qpylib.log("group="+ net_group)
-        qpylib.log(type(net_name))
-        qpylib.log(type(net_cidr))
-        qpylib.log(type(net_group))
+            qpylib.log("Name="+ net_name)
+            qpylib.log("cidr="+ net_cidr)
+            qpylib.log("group="+ net_group)
+            qpylib.log(type(net_name))
+            qpylib.log(type(net_cidr))
 
-        y = IPv4Network(net_cidr)
-        qpylib.log("--- printing IPv4 addr ---")
-        qpylib.log(y)
-        z = IPv4Network('0.0.0.14')
-        qpylib.log(y.overlaps(z))
+            qpylib.log(type(net_group))
+            base_url = qpylib.get_app_base_url()
+            qpylib.log("base URL = "+base_url)
+            qpylib.log(url_for('views.network_search'))
+            y = IPv4Network(net_cidr)
+            qpylib.log("--- printing IPv4 addr ---")
+            qpylib.log(y)
+            z = IPv4Network('0.0.0.14')
+            qpylib.log(y.overlaps(z))
 
+            return render_template("network_search.html", title="Admin Me!")
 
-
-        return render_template("network_search.html", title="Admin Me!")
-    except Exception as ex:
-        qpylib.log("This is an exception"+str(ex),'ERROR')
-        raise
+        except Exception as ex:
+            qpylib.log("This is an exception"+str(ex),'ERROR')
+            raise
+    else:
+        #return render_template("result.html", name=name)
+        return '<h1>You are in post</h1>'
