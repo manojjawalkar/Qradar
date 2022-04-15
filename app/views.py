@@ -75,5 +75,18 @@ def network_search():
             qpylib.log("This is an exception"+str(ex),'ERROR')
             raise
     else:
-        #return render_template("result.html", name=name)
-        return '<h1>You are in post</h1>'
+        found = {}
+        ip = request.form["ip"]
+        target_net = IPv4Network(ip)
+        qpylib.log("target_net =" + str(target_net))
+        networks = qpylib.REST('get', '/api/config/network_hierarchy/networks')
+        for network in networks.json():
+            net_cidr = network['cidr']
+            matches_net = IPv4Network(net_cidr)
+            if target_net.overlaps(matches_net):
+                qpylib.log("Target matched with one of the networks =" + net_cidr)
+                found = network
+                # now create a dictonary to return
+                # actually just return the network object as it is
+        return render_template("result.html", ip=ip, found=found)
+

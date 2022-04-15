@@ -1,6 +1,6 @@
 {
-  "name": "REST Method",
-  "description": "Demonstrates REST method used by dashboard item",
+  "name": "Find Network",
+  "description": "Easily find what network an IP belongs to",
   "version": "1.0.3",
   "uuid": "33ed29d0-39b7-45cc-8b32-420919eac36c",
   "image": "qradar-app-base:2.0.0",

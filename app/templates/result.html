@@ -5,6 +5,12 @@
     <title>Results</title>
 </head>
 <body>
-    <h1>You have passed "enter the name here" </h1>
+    <h1> You have entered {{ ip }} </h1>
+    <h2> Your network details are</h2>
+        {% for key, value in found.items() %}
+             <h1>Key: {{key}}</h1>
+             <h2>Value: {{value}}</h2>
+             <br/>
+        {% endfor %}
 </body>
 </html>
