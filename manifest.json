@@ -8,7 +8,7 @@
     {
       "text":"Search Networks",
       "description":"Search your networks by IP address",
-      "icon":null,
+      "icon":"static/images/image.png",
       "url":"network_search",
       "required_capabilities": [
         "ADMIN"
