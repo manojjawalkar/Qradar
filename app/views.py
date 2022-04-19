@@ -16,6 +16,7 @@ def network_search():
     if request.method == 'GET':
         return render_template("network_search.html", base_url=base_url)
     else:
+        base_url = qpylib.get_app_base_url()
         found = {}
         ip = request.form["ip"]
         target_net = IPv4Network(ip)
@@ -27,5 +28,5 @@ def network_search():
             if target_net.overlaps(matches_net):
                 qpylib.log("Target matched with one of the networks =" + net_cidr)
                 found = network
-        return render_template("result.html", ip=ip, found=found)
+        return render_template("result.html", ip=ip, found=found, base_url=base_url)
 

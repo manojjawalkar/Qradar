@@ -14,6 +14,13 @@
         "ADMIN"
       ]
     }
+  ],
+  "page_scripts": [
+    {
+      "app_name":"*",
+      "page_id":"*",
+      "scripts":["static/js/qappfw.min.js"]
+    }
   ]
 
 }

@@ -6,6 +6,13 @@
     <title>{% block title%} {% endblock%}</title>
     <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
     <script src="static/js/bootstrap.min.bundle.js"></script>
+<!--    <script src="static/js/qappfw.min.js">-->
+<!--        var app_id = null ;-->
+<!--        var base_url = null;-->
+<!--        const QRadar = window.qappfw.QRadar-->
+<!--        base_url = QRadar.getApplicationBaseUrl(app_id)-->
+<!--        alert("base url = " + base_url)-->
+<!--    </script>-->
 </head>
 <body>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -16,7 +23,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="{{ base_url}}">baseURL</a>
+                <a class="nav-link" href="{{ base_url}}/network_search">baseURL</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ base_url}}/network_search">baseURL_network_search</a>
