@@ -12,8 +12,9 @@ viewsbp = Blueprint('views', __name__, url_prefix='/')
 
 @viewsbp.route('/network_search', methods=['GET','POST'])
 def network_search():
+    base_url = qpylib.get_app_base_url()
     if request.method == 'GET':
-        return render_template("network_search.html", title="Admin Me!")
+        return render_template("network_search.html", base_url=base_url)
     else:
         found = {}
         ip = request.form["ip"]
