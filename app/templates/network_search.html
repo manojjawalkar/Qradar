@@ -12,5 +12,20 @@
         </div>
     </div>
 </div>
+<br/>
+
+    {% for network in found %}
+    <div class="float-left container">
+        <table class="table table-striped table-bordered">
+            {% for key, value in network.items() %}
+            <tr>
+                <th>{{ key }}</th>
+                <td>{{ value }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endfor %}
+
 
 {% endblock %}

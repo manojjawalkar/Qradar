@@ -28,5 +28,5 @@ def network_search():
             if target_net.overlaps(matches_net):
                 qpylib.log("Target matched with one of the networks =" + net_cidr)
                 found.append(network)
-        return render_template("result.html", ip=ip, found=found, base_url=base_url)
+        return render_template("network_search.html", ip=ip, found=found, base_url=base_url)
 
