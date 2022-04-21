@@ -2,9 +2,8 @@
 # author Manoj Jawalkar
 
 
-from flask import Blueprint, render_template, request, url_for
-from ipaddress import IPv4Network
-import json
+from flask import Blueprint, render_template, request
+from ipaddress import IPv4Network, AddressValueError, NetmaskValueError
 from qpylib import qpylib
 
 # pylint: disable=invalid-name
@@ -19,7 +18,10 @@ def network_search():
         base_url = qpylib.get_app_base_url()
         found = []
         ip = request.form["ip"]
-        target_net = IPv4Network(ip)
+        try:
+            target_net = IPv4Network(ip)
+        except (AddressValueError, NetmaskValueError, ValueError) as e:
+            return render_template("network_search.html", base_url=base_url, ip_addr_exception=e)
         qpylib.log("target_net =" + str(target_net))
         networks = qpylib.REST('get', '/api/config/network_hierarchy/networks')
         for network in networks.json():

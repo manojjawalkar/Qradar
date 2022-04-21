@@ -6,26 +6,47 @@
     <div class="d-flex justify-content-center h-100">
         <div class="searchbar">
             <form action="#" method="POST">
-                <input class="search_input" name="ip" type="text" placeholder="Enter an IP address...">
-                <input class="search_icon fas fa-search" type="submit" value="Submit">
+                <div class="searchBar">
+                    <input id="searchQueryInput" type="text" name="ip" placeholder="Enter an IP address..." value=""/>
+                </div>
             </form>
         </div>
     </div>
 </div>
 <br/>
 
-    {% for network in found %}
-    <div class="float-left container">
-        <table class="table table-striped table-bordered">
-            {% for key, value in network.items() %}
-            <tr>
-                <th>{{ key }}</th>
-                <td>{{ value }}</td>
-            </tr>
-            {% endfor %}
-        </table>
-    </div>
-    {% endfor %}
+{% if ip_addr_exception %}
+<div class="d-flex justify-content-center container">
+    <table class="table table-striped table-bordered ">
+        <tr>
+            <td>{{ ip_addr_exception }}</td>
+        </tr>
+    </table>
+</div>
+{% endif %}
 
+{% if found is defined and found|length < 1 %}
+<div class="d-flex justify-content-center container">
+    <table class="table table-striped table-bordered ">
+        <tr>
+            <td>No Matching networks found in your deployment</td>
+        </tr>
+    </table>
+</div>
+
+{% elif found is defined and found|length > 0 %}
+{% for network in found %}
+<div class="d-flex justify-content-center container">
+    <table class="table table-striped table-bordered">
+        {% for key, value in network.items() %}
+        <tr>
+            <th>{{ key }}</th>
+            <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endfor %}
+{% endif %}
 
 {% endblock %}
