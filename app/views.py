@@ -38,10 +38,10 @@ def network_search():
                 net_domain_id = network['domain_id']
                 for domain in domains:
                     if net_domain_id in domain.values():
-                        qpylib.log("key found ")
                         network.pop('network_id')
                         network.pop('id')
                         network.pop('domain_id')
+                        #Default domain has no name in API so is replaced with name = 'Default Domain'
                         network['domain'] = "Default Domain" if domain['name'] == "" else domain['name']
                 found.append(network)
         return render_template("network_search.html", ip=ip, found=found, base_url=base_url)
@@ -49,6 +49,4 @@ def network_search():
 
 def get_domains():
     domains = qpylib.REST('get', '/api/config/domain_management/domains?fields=id%2C%20name')
-    qpylib.log("domains JSON ----> ")
-    qpylib.log(domains.json())
     return domains.json()

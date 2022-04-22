@@ -35,13 +35,15 @@
 </div>
 
 {% elif found is defined and found|length > 0 %}
+<div class="justify-content-center text-center"><h6 class="text-secondary">Matching networks for {{ ip }}</h6></div>
 {% for network in found %}
-<div class="d-flex justify-content-center container">
-    <table class="table table-striped table-bordered">
+<div class="float-xl-left shadow p-3 mb-5 bg-white rounded d-flex container"
+     style="width: fit-content; height: fit-content; padding: 10px;">
+    <table class="d-flex justify-content-center table table-striped table-bordered">
         {% for key, value in network.items() %}
         <tr>
-            <th>{{ key }}</th>
-            <td>{{ value }}</td>
+            <th class="text-capitalize">{{ key }}</th>
+            <td class="text-capitalize">{{ value }}</td>
         </tr>
         {% endfor %}
     </table>
