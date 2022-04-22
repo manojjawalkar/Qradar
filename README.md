@@ -18,7 +18,7 @@ and
 qapp deploy -p app.zip -q <qradar console ip> -u <qradar user>
 ```
 
-##There are some configurations you need to do on your Mac
+## There are some configurations you needs to done on your laptop
 ### Certificates for authentication with QRAdar
   - your cert should be in ~/.qradar_app_sdk
 
@@ -29,7 +29,7 @@ qapp deploy -p app.zip -q <qradar console ip> -u <qradar user>
     x.x.x.50 vm592087.com 
     ```
 
-###Use the curl command to check if network is an issue - 
+### Use the curl command to check if network is an issue - 
   
   - ```bash
     curl -S -X GET -u admin -H 'Range: items=0-49' -H 'Version: 16.0' -H 'Accept: application/json' --cacert ca-bundle.crt 'https://x.x.x50/api/ariel/databases'
