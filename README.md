@@ -1,8 +1,6 @@
-# RESTMethod
+# Network Scanner
 
-This sample app demonstrates how to use an app *REST method* to populate a dashboard item in QRadar. The app is simple
-and uses Flask and Jinja to render a HTML page with a dropdown list of QRadar Ariel database names, retrieved from the
-QRadar API using QPyLib. This list of QRadar Ariel database names visible as a dashboard item.
+This app adds a new configuration_page in admin tab. It provides a GUI to search networks in your deployment. It and uses Flask and Jinja to render a HTML page. 
 
 ## Running this app
 
