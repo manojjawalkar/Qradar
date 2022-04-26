@@ -16,22 +16,22 @@
 <br/>
 
 {% if ip_addr_exception %}
-<div class="d-flex justify-content-center container">
-    <table class="table table-striped table-bordered ">
-        <tr>
-            <td>{{ ip_addr_exception }}</td>
-        </tr>
-    </table>
+<div class="m-4">
+    <div class="alert alert-danger alert-dismissible d-flex align-items-center fade show">
+        <i class="bi-exclamation-octagon-fill"></i>
+        <strong class="mx-2">Error!</strong> {{ ip_addr_exception }}.
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
 </div>
 {% endif %}
 
 {% if found is defined and found|length < 1 %}
-<div class="d-flex justify-content-center container">
-    <table class="table table-striped table-bordered ">
-        <tr>
-            <td>No Matching networks found in your deployment</td>
-        </tr>
-    </table>
+<div class="m-4">
+    <div class="alert alert-info alert-dismissible d-flex align-items-center fade show">
+        <i class="bi-info-circle-fill"></i>
+        <strong class="mx-2"> No Matching networks found in your deployment!</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
 </div>
 
 {% elif found is defined and found|length > 0 %}
